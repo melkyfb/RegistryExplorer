@@ -36,3 +36,19 @@ optional arguments:
   --ssl-disable-verify, -sdv
                         Disable the SSL Certificate Verification
 ```
+
+### Getting the Image List
+```RegistryExplorer.py --show-images --username username --password password --ssl-disable https://dockerregistrypath/v2/```
+
+### Getting the Tags List
+```RegistryExplorer.py --show-tags-list --image imagename --username username --password password --ssl-disable https://dockerregistrypath/v2/```
+
+### Getting Manifest for Blobs
+```RegistryExplorer.py --show-manifests --image imagename --tag tagname --username username --password password --ssl-disable https://dockerregistrypath/v2/```
+
+### Getting Specific Blob
+```RegistryExplorer.py --download-blob --image imagename  --blob 'sha256:blobhash' --username username --password password --ssl-disable https://dockerregistrypath/v2/```
+
+
+### Getting All Blobs for an Image
+```RegistryExplorer.py --download-all-blob --image imagename --tag tagname --username username --password password --ssl-disable https://dockerregistrypath/v2/```
